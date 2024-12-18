@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriti | Portfolio</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .wave {
+            display: inline-block;
+            animation: wave-animation 0.8s infinite ease-in-out;
+            transform-origin: 70% 70%;
+            /* Adjust origin for a realistic wave */
+        }
+
+        @keyframes wave-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            15% {
+                transform: rotate(15deg);
+            }
+
+            30% {
+                transform: rotate(0deg);
+            }
+
+            45% {
+                transform: rotate(-15deg);
+            }
+
+            60% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Kriti's Portfolio ✨</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i>
+                            Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates"><i class="fas fa-certificate"></i>
+                            Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts"><i class="fas fa-envelope"></i>
+                            Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-left py-5">
+        <div class="container py-5 d-flex justify-content-between align-items-center">
+            <div class="text-left">
+                <h4 class="display-6">Hi There! <span class="wave">👋🏻</span></h4>
+                <h1 class="display-4">
+                    I'M <span style="color: #FF1493;">KRITI GAUTAM</span>
+                </h1>
+                <br>
+                <h2 class="role-container" style="color: #FF1493;">
+                    <!-- Empty container for TypewriterJS to target -->
+                </h2>
+                <style>
+                    /* Adjusting social icon container */
+                    .social-icon-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        /* Adjust the size of the circle */
+                        height: 40px;
+                        border-radius: 50%;
+                        /* Makes it circular */
+                        background-color: white;
+                        /* Change background if needed */
+                        padding: 5px;
+                        /* Add minimal padding */
+                        margin: 0 auto;
+                        /* Center the circle */
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    /* Icon inside the circle */
+                    .social-icon {
+                        font-size: 15px;
+                        /* Icon size */
+                        color: #FF1493;
+                        /* Icon color */
+                        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+                    }
+
+                    /* Hover effect for container */
+                    .social-icon-container:hover {
+                        background-color: #ffe6f0;
+                        /* Light pink background on hover */
+                        transform: scale(2);
+                        /* Slightly enlarge the circle */
+                    }
+
+                    /* Hover effect for icons */
+                    .social-icon:hover {
+                        transform: scale(2);
+                        /* Slightly enlarge the icon */
+                        color: #e0115f;
+                        /* Darker pink */
+                    }
+                </style>
+
+                <div class="row mt-4 justify-content-center">
+                    <!-- Email -->
+                    <div class="col-md-2 mb-4">
+                        <div class="social-icon-container">
+                            <a href="mailto:kritiwork25@gmail.com" class="text-decoration-none">
+                                <i class="fa fa-envelope social-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="col-md-2 mb-4">
+                        <div class="social-icon-container">
+                            <a href="https://www.linkedin.com/in/kritiigautam/" class="text-decoration-none"
+                                target="_blank">
+                                <i class="fab fa-linkedin social-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="col-md-2 mb-4">
+                        <div class="social-icon-container">
+                            <a href="https://github.com/Kritiji/" class="text-decoration-none" target="_blank">
+                                <i class="fab fa-github social-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Twitter (X) -->
+                    <div class="col-md-2 mb-4">
+                        <div class="social-icon-container">
+                            <a href="https://x.com/Kriiiitii" class="text-decoration-none" target="_blank">
+                                <i class="fab fa-twitter social-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="col-md-2 mb-4">
+                        <div class="social-icon-container">
+                            <a href="https://www.instagram.com/tech_with_kriti/" class="text-decoration-none"
+                                target="_blank">
+                                <i class="fab fa-instagram social-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="img-part">
+            <img src="img/Group 1482.png" alt="Kriti's Photo">
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-5" style="color: #333;">LET ME <span style="color: #FF1493;">INTRODUCE</span>
+                    MYSELF</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">
+                    Passionate about empowering learners, solving real-world problems, and creating <span
+                        class="fw-bold text-primary">tech magic</span>!
+                </p>
+            </div>
+
+            <!-- Content Row -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="img/Group 1485.png" alt="About Me" style="max-width: 300px;">
+                </div>
+
+                <!-- Text Section -->
+                <div class="col-md-6">
+                    <div class="p-3 bg-white rounded shadow-sm">
+                        <h4 class="mb-3 fw-bold" style="color: #FF1493;">👩‍💻 Tech Enthusiast with Many Hats 🎩</h4>
+                        <ul class="list-unstyled lh-lg" style="color: #555;">
+                            <li>
+                                🧑‍🏫 <span class="fw-bold text-dark">Trainer & Educator:</span>
+                                Making tech simple, fun, and accessible for everyone.
+                            </li>
+                            <li>
+                                🌐 <span class="fw-bold text-dark">Community Evangelist:</span>
+                                Turning tech discussions into life-changing opportunities.
+                            </li>
+                            <li>
+                                ☁ <span class="fw-bold text-dark">DevOps & Cloud Practitioner:</span>
+                                Automating the future and streamlining development to production.
+                            </li>
+                            <li>
+                                🔗 <span class="fw-bold text-dark">Blockchain & Web3 Enthusiast:</span>
+                                Exploring the decentralized revolution.
+                            </li>
+                            <li>
+                                🛠 <span class="fw-bold text-dark">Software Engineer:</span>
+                                Creating smart, fast, and user-friendly software.
+                            </li>
+                            <li>
+                                📱 <span class="fw-bold text-dark">App Developer:</span>
+                                Turning ideas into apps people love.
+                            </li>
+                        </ul>
+                        <p class="mt-3 text-muted fst-italic">
+                            "Empowering learners, solving challenges, and building tech wonders 🚀"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 text-center">
+        <div class="container">
+            <h2 class="fw-bold display-5" style="color: #333;">MY RECENT <span style="color: #FF1493;">WORKS</span></h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">Here are a few projects I've worked on recently.</p>
+
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+
+                <div class="carousel-inner">
+                    <!-- Card 1 -->
+                    <div class="carousel-item active">
+                        <div class="card h-100 shadow project-card mx-auto">
+                            <img src="https://media.licdn.com/dms/image/v2/C4D12AQGl43sFu2lbCA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1644579708052?e=2147483647&v=beta&t=Lh82obeZLbYlC9dpF-1v0j6uJh3U5IXq8pW8DQqsVWA"
+                                class="card-img-top" alt="Docker Swarm -> Kubernetes">
+                            <div class="card-body">
+                                <h5 class="card-title">Docker Swarm -> Kubernetes</h5>
+                                <p class="card-text">This project involved migrating the application from Docker Swarm
+                                    to Kubernetes, enhancing scalability and
+                                    automation by implementing CI/CD pipelines, configuration management, and
+                                    Infrastructure-as-Code (IaC) for improved
+                                    deployment efficiency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="carousel-item">
+                        <div class="card h-100 shadow project-card mx-auto">
+                            <img src="https://i0.wp.com/eastgate-software.com/wp-content/uploads/2023/11/monolith-vs.-microservices.png?fit=1920%2C1080&ssl=1"
+                                class="card-img-top" alt="DevOps Automation Tools">
+                            <div class="card-body">
+                                <h5 class="card-title">Monolithic -> Microservice</h5>
+                                <p class="card-text">The project focused on transitioning a monolithic application to a
+                                    microservices architecture, improving scalability,
+                                    maintainability, and fault isolation by breaking down the application into
+                                    independent, manageable services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="carousel-item">
+                        <div class="card h-100 shadow project-card mx-auto">
+                            <img src="img/NooTA.png" class="card-img-top" alt="NoTA App">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://github.com/Kritiji/Note_Taking_App">NoTA</a>
+                                </h5>
+                                <p class="card-text">"NoTA", an intelligent Note Taking App that defies convention.
+                                    Unlike traditional note-taking applications, it organizes
+                                    its content in a hierarchical manner – from Folders to Pages, and Pages to Content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="carousel-item">
+                        <div class="card h-100 shadow project-card mx-auto">
+                            <img src="img/Saarthi.jpg" class="card-img-top" alt="Quiz App">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://github.com/Kritiji/Saarthi">Saarthi</a></h5>
+                                <p class="card-text">Saarthi is a pregnancy care app designed to provide expectant
+                                    mothers with personalized health advice, track pregnancy
+                                    milestones, offer nutritional guidance, and ensure overall well-being throughout
+                                    their pregnancy journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold display-5" style="color: #333;"><span style="color: #FF1493;">GLOBAL CERTIFICATION</span>
+            </h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">
+                Here are some of the certifications I've earned.
+            </p>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/A funda.png" class="card-img-top rounded" alt="Azure Fundamentals"
+                            style="object-fit: contain; height: 250px; max-width: 100%;">
+                        <div class="card-body text-start">
+                            <h5 class="card-title mt-2">Microsoft Certified: Azure Fundamentals(AZ-900)</h5>
+                            <p class="card-text">
+                                Validated knowledge of core Azure services, cloud concepts, security, pricing, and cost
+                                management. A strong foundation for cloud technologies and Microsoft Azure
+                                solutions.technologies and Microsoft Azure solutions.
+                            </p>
+                            <small class="text-muted">Issued: June 07, 2023</small>
+                            <a href="https://www.credly.com/badges/e0c355a2-33a5-4952-81bd-2c753f799058"
+                                class="btn btn-primary float-end">View Credentials</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-80">
+                        <img src="img/2.png" class="card-img-top rounded" alt="Azure AI Fundamentals"
+                            style="object-fit: contain; height: 250px; max-width: 100%;">
+                        <div class="card-body text-start">
+                            <h5 class="card-title mt-2">Microsoft Certified: Azure AI Fundamentals (AI-900)</h5>
+                            <p class="card-text">
+                                Demonstrated understanding of AI concepts, machine learning, and Azure AI services,
+                                including responsible AI, computer vision, and natural language processing. A solid
+                                foundation for exploring AI solutions on Azure.
+                            </p>
+                            <small class="text-muted">Issued: June 12, 2023</small>
+                            <a href="https://www.credly.com/badges/4c565293-19d0-4179-9621-69694663120a"
+                                class="btn btn-primary float-end">View Credentials</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-80">
+                        <img src="img/DP-900.png" class="card-img-top rounded" alt="Azure Data Fundamentals"
+                            style="object-fit: contain; height: 250px; max-width: 100%;">
+                        <div class="card-body text-start">
+                            <h5 class="card-title mt-2">Microsoft Certified: Azure Data Fundamentals (DP-900)</h5>
+                            <p class="card-text">
+                                Validated knowledge of core data concepts, relational and non-relational data, and Azure
+                                data services like Azure SQL, Cosmos DB, and Synapse Analytics. A strong foundation for
+                                data solutions in the cloud.
+                            </p>
+                            <small class="text-muted">Issued: June 15, 2023</small>
+                            <a href="https://www.credly.com/badges/8e2f2f77-ce3c-4ac2-8f59-72fb53928d5b"
+                                class="btn btn-primary float-end">View Credentials</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-80">
+                        <img src="img/SC-900.png" class="card-img-top rounded"
+                            alt="Security, Compliance, and Identity Fundamentals"
+                            style="object-fit: contain; height: 250px; max-width: 100%;">
+                        <div class="card-body text-start">
+
+                            <h5 class="card-title mt-2">Microsoft Certified: Security, Compliance, and Identity
+                                Fundamentals (SC-900)</h5>
+                            <p class="card-text">
+                                Demonstrated understanding of core security, compliance, and identity concepts, along
+                                with
+                                Azure security services, governance, and risk management tools. A foundational
+                                certification for securing cloud environments.
+                            </p>
+                            <small class="text-muted">Issued: June 18, 2023</small>
+                            <a href="https://www.credly.com/badges/3e2d0011-52c6-4ea3-8bdf-2ec14cee88f6"
+                                class="btn btn-primary float-end">View Credentials</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contacts" class="py-5 contact-section">
+        <div class="container text-center">
+            <h2 class="fw-bold display-5" style="color: #333;">
+                <span style="color: black;">CONTACT ME</span>
+            </h2>
+        </div>
+        <br>
+        <div class="contact-container">
+            <div class="contact-form">
+                <div class="contact-box">
+                    <input type="text" class="form-field" placeholder="Your Name">
+                    <input type="email" class="form-field" placeholder="Your Email">
+                    <textarea class="form-field" placeholder="Your Message"></textarea>
+                    <button class="btn-pink">Send Message</button>
+                </div>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Varanasi, Uttar Pradesh, India</p>
+                    <p><i class="fas fa-envelope"></i> kritiwork25@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799686675!2d82.90870595402012!3d25.320894921461445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1734455862020!5m2!1sen!2sin"
+                    width="600" height="450"
+                    style="border-radius: 10px; border: 3px solid rgba(255, 20, 147, 0.5); box-shadow: 0 0 15px rgba(255, 20, 147, 0.7);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-white text-center py-1 mt-1">
+        <p>&copy; 2024 Kriti's Portfolio. All rights reserved.</p>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybKdo5i7aT2o3hd7g68C18Y5iW5juyXY3U1pHkhzRhI8k6x7yC"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
